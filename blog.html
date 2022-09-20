@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bunty's</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  </head>
+  <style>
+    .product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  flex: 1;
+}
+.hover-card:hover{
+  /* border-width: 1px; */
+  box-shadow: 0px 0px 1px #333;
+}
+.serchbar{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.serchbarbtn{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.bg-gradiunt{
+    background-image: linear-gradient( 174.2deg,  rgba(255,244,228,1) 7.1%, rgba(240,246,238,1) 67.4% );
+
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
+  </style>
+  <body>
+    <nav class="d-flex justify-content-end align-items-end p-3 fixed-top bg-transparent">
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="/" class="nav-link px-2 mx-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-dark mx-2">Login</a></li>
+            <li class="nav-item"><a href="#" class="btn btn-info mx-2 p-2">Signup</a></li>
+            <li class="nav-item">
+                <a class="btn btn-dark" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Book Appoitment
+                   </a>
+            </li>
+          </ul>
+    </nav>
+<header class="py-5 bg-light border-bottom mb-4">
+    <div class="d-flex justify-content-center align-items-center">
+        <a href="/">
+            <img src="assets/footerlogo.svg" class="" height="200px" >
+        </a>
+    </div>
+    <div class="container ">
+        <div class="text-center my-5">
+            <h1 class="fw-bolder">Welcome to Blog Home!</h1>
+            <p class="lead mb-0">A Bootstrap 5 starter layout for your next blog homepage</p>
+        </div>
+    </div>
+</header>
+<!-- Page content-->
+<div class="container">
+    <div class="row">
+        <!-- Blog entries-->
+        <div class="col-lg-8">
+            <!-- Featured blog post-->
+            <div class="card mb-4 border-0 hover-card text-bg-transparent rounded-5">
+                <a href="bloghair.html"><img class="card-img-top rounded-5" src="https://dummyimage.com/850x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                <div class="card-body bg-transparent">
+                    <div class="small text-muted">January 1, 2022</div>
+                    <h2 class="card-title">Featured Post Title</h2>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a laboriosam. Dicta expedita corporis animi vero voluptate voluptatibus possimus, veniam magni quis!</p>
+                    <a class="btn btn-primary" href="bloghair.html">Read more →</a>
+                </div>
+            </div>
+            <!-- Nested row for non-featured blog posts-->
+            <div class="row">
+                <!-- Blog post-->
+                <div class="col-lg-6">
+                    <div class="card border-0 hover-card rounded-5 mb-4">
+                        <a href="bloghair.html"><img class="card-img-top rounded-5" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                        <div class="card-body">
+                            <div class="small text-muted">January 1, 2022</div>
+                            <h2 class="card-title h4">Post Title</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                            <a class="btn btn-primary" href="bloghair.html">Read more →</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog post-->
+                <div class="col-lg-6">
+                    <div class="card border-0 hover-card rounded-5 mb-4">
+                        <a href="bloghair.html"><img class="card-img-top rounded-5" src="https://dummyimage.com/700x350/dee2e6/6c757d.jpg" alt="..." /></a>
+                        <div class="card-body">
+                            <div class="small text-muted">January 1, 2022</div>
+                            <h2 class="card-title h4">Post Title</h2>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis aliquid atque, nulla.</p>
+                            <a class="btn btn-primary" href="bloghair.html">Read more →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Pagination-->
+            <nav aria-label="Pagination">
+                <hr class="my-0" />
+                <ul class="pagination justify-content-center my-4">
+                    <li class="page-item disabled"><a class="page-link" href="#" tabindex="-1" aria-disabled="true">Newer</a></li>
+                    <li class="page-item active" aria-current="page"><a class="page-link" href="bloghair.html">1</a></li>
+                    <li class="page-item"><a class="page-link" href="bloghair.html">2</a></li>
+                    <li class="page-item"><a class="page-link" href="bloghair.html">3</a></li>
+                    <li class="page-item disabled"><a class="page-link" href="bloghair.html">...</a></li>
+                    <li class="page-item"><a class="page-link" href="bloghair.html">15</a></li>
+                    <li class="page-item"><a class="page-link" href="bloghair.html">Older</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Side widgets-->
+        <div class="col-lg-4">
+            <!-- Search widget-->
+            <div class="card mb-4 border-0">
+                <div class="card-body">
+                    <div class="input-group">
+                        <input class="form-control serchbar" list="datalistOptions" id="exampleDataList" placeholder="Enter search blog..." aria-label="Enter search blog..." aria-describedby="button-search" />
+                        <datalist class="" id="datalistOptions">
+                            <option value="San Francisco">
+                            <option value="New York">
+                            <option value="Seattle">
+                            <option value="Los Angeles">
+                            <option value="Chicago">
+                          </datalist>
+                        <button class="btn btn-primary serchbarbtn" id="button-search" type="button">Go!</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categories widget-->
+            <div class="card mb-4 border-0 hover-card rounded-5 p-4">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="bloghair.html">Web Design</a></li>
+                                <li><a href="bloghair.html">HTML</a></li>
+                                <li><a href="bloghair.html">Freebies</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="bloghair.html">JavaScript</a></li>
+                                <li><a href="bloghair.html">CSS</a></li>
+                                <li><a href="bloghair.html">Tutorials</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Side widget-->
+            <div class="card mb-4">
+                <div class="card-header">Side Widget</div>
+                <div class="card-body">You can put anything you want inside of these side widgets. They are easy to use, and feature the Bootstrap 5 card component!</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- news letter -->
+    <div class="container mt-5 p-5">
+      <div class="card mx-4 shadow-lg rounded-5 border-info border-1">
+        <div class="card-body p-5" style="height:'500px'">
+          <small class="text-muted fs-3">Subscribe Our News Letter Get a <span class="text-danger">20%</span> in Our Services.& Get New Offers Update's </small>
+           <div class="row">
+            <div class="col-6 d-flex justify-content-center align-items-center">
+              <img src="assets/footerlogo.svg" height="200px" >
+            </div>
+            <div class="col-6">
+              <div class="mb-3">
+                <label for="formGroupExampleInput " class="form-label">Mobaile No.</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Email Id</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+              </div>
+              <button type="button" class="btn btn-outline-dark mt-3" > Get Offer </button>
+            </div>
+           </div>
+        </div>
+      </div>
+    </div>
+    <!-- news letter -->
+<!-- footer -->
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <p class="col-md-4 mb-0 text-muted">&copy; 2022 Bunty's Sallon, All Right reserved</p>
+
+    <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+      <img src="assets/logo.svg" >
+    </a>
+
+    <ul class="nav col-md-4 justify-content-end">
+      <li class="nav-item"><a href="joinus.html" class="nav-link px-2 text-muted">Join Us</a></li>
+      <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-muted">Contact Us</a></li>
+      <li class="nav-item"><a href="tandc.html" class="nav-link px-2 text-muted">t&c</a></li>
+      <li class="nav-item"><a href="fandq.html" class="nav-link px-2 text-muted">FAQs</a></li>
+      <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">About</a></li>
+    </ul>
+  </footer>
+</div>
+<!-- footer end -->
+   
+
+
+
+    
+
+    <!-- Models -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-gradiunt py-4">
+      <div class="modal-body pt-0">
+        <div class="d-flex align-item-end justify-content-end">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="container mt-3">
+          <div class="d-flex justify-content-center align-items-center my-3">
+            <img src="assets/logo.svg" >
+          </div>
+          <div class="appoitmentform">
+            <form class="">
+              <div class="form-floating mb-2">
+                
+                <input type="text" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Full Name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Mobaile No.</label>
+              </div>
+              <div class="form-floating mb-3">
+                <select type="text" class="form-control rounded-3" id="floatingInput">
+                  <option value="1">Hair Service</option>
+                </select>
+                <label for="floatingInput">Pls Select Your Service Categury</label>
+              </div>
+              <div class="form-floating mb-3">
+                <select type="text" class="form-control rounded-3" id="floatingInput">
+                  <option value="1">Hair Service</option>
+                </select>
+                <label for="floatingInput">Pls Select Your Service</label>
+              </div>
+              <div class="form-check form-switch mb-3">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault"><small class="text-muted">By clicking Sign up, you agree to the terms of use.</small></label>
+              </div>
+              <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Get Appoitment</button>
+              
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <script  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script  src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+      $('.testymonial').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplaySpeed:true,
+        prevArrow:'<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>',
+        nextArrow:'<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>',
+        centerMode: true,
+        centerMarging: '60px',
+      });
+    </script>
+  </body>
+</html>
